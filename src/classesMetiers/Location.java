@@ -1,3 +1,6 @@
+package classesMetiers;
+
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -11,7 +14,7 @@ public class Location {
     /**
      * date de la location
      */
-    private Date dateLoc;
+    private LocalDate dateLoc;
 
     /**
      * acompte
@@ -42,7 +45,7 @@ public class Location {
      * @param client = client
      */
 
-    public Location(int id, int kmtotal, Date dateLoc, float acompte, float total, Taxi taxi, Client client) {
+    public Location(int id, int kmtotal, LocalDate dateLoc, float acompte, float total, Taxi taxi, Client client) {
         this.id = id;
         this.kmtotal = kmtotal;
         this.dateLoc = dateLoc;
@@ -60,6 +63,7 @@ public class Location {
         total = taxi.getPrixKm()*kmtotal;
     }
 
+    //TODO A VERIFIER
     /**
      * méthode affichant les locations d'une date
      */
@@ -68,13 +72,18 @@ public class Location {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez entrer une date : ");
         String datesc = sc.nextLine();
+        //transformer string en localdate
+        DateTimeFormatter pattern = DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        LocalDate datetime = LocalDate.parse(oldDate, pattern);
 
-        for (Location loc : listeLocations) 
+        for (Location loc : listeLocations)
         {
-            if(dateLoc.toLowerCase().equals(datesc))
+
+            //boucle pour parcourir les locations ?
+            if(dateLoc.isEqual(datetime))
             {
                 System.out.println(loc.toString() + loc.getClient().toString() + loc.getTaxi().toString());
-                
+
             }
         }
 
@@ -200,7 +209,7 @@ public class Location {
      */
     @Override
     public String toString() {
-        return "Location [acompte=" + acompte + ", client="
+        return "classesMetiers.Location [acompte=" + acompte + ", client="
                 + client + ", dateLoc=" + dateLoc + ", id=" + id + ", kmtotal=" + kmtotal + ", taxi=" + taxi
                 + ", total=" + total + "]";
     }

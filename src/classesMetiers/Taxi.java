@@ -1,3 +1,5 @@
+package classesMetiers;
+
 import java.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,15 +32,13 @@ public class Taxi{
      * @param immatriculation = immatriculation du taxi
      * @param carburant = carburant du taxi
      * @param prixKm = prix au kilomètrz
-     * @param locations = liste des locations
      */
 
-    public Taxi(int id, String immatriculation, String carburant, float prixKm, List<Location> locations) {
+    public Taxi(int id, String immatriculation, String carburant, float prixKm) {
         this.id = id;
         this.immatriculation = immatriculation;
         this.carburant = carburant;
         this.prixKm = prixKm;
-        this.locations = locations;
     }
 
 
@@ -135,7 +135,7 @@ public class Taxi{
 
     @Override
     public String toString() {
-        return "Taxi [carburant=" + carburant + ", id=" + id + ", immatriculation=" + immatriculation + ", locations="
+        return "classesMetiers.Taxi [carburant=" + carburant + ", id=" + id + ", immatriculation=" + immatriculation + ", locations="
                 + locations + ", prixKm=" + prixKm + "]";
     }
 

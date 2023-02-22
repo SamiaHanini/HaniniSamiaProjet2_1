@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6732fb8-1d34-49b2-988c-05b2f63ae25b" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Adresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taxi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classesMetiers/Adresse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classesMetiers/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classesMetiers/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classesMetiers/Taxi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -53,6 +61,8 @@
       <workItem from="1676961813143" duration="284000" />
       <workItem from="1676962104607" duration="1324000" />
       <workItem from="1676964325068" duration="1334000" />
+      <workItem from="1676999386715" duration="837000" />
+      <workItem from="1677061691514" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1675854441627</created>

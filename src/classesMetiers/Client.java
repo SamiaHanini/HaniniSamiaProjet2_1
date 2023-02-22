@@ -1,3 +1,5 @@
+package classesMetiers;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -31,16 +33,14 @@ public class Client {
      * @param nom = nom client
      * @param prenom = prenom client
      * @param tel = numéro de téléphone du client
-     * @param locations = liste des locations
      */
 
-    public Client(int id, String mail, String nom, String prenom, String tel, List<Location> locations) {
+    public Client(int id, String mail, String nom, String prenom, String tel) {
         this.id = id;
         this.mail = mail;
         this.nom = nom;
         this.prenom = prenom;
         this.tel = tel;
-        this.locations = locations;
     }
 
     /**
@@ -146,7 +146,7 @@ public class Client {
      */
     @Override
     public String toString() {
-        return "Client [id=" + id + ", locations=" + locations + ", mail=" + mail + ", nom=" + nom + ", prenom="
+        return "classesMetiers.Client [id=" + id + ", locations=" + locations + ", mail=" + mail + ", nom=" + nom + ", prenom="
                 + prenom + ", tel=" + tel + "]";
     }
 
