@@ -44,6 +44,25 @@ public class Client {
     }
 
     /**
+     * méthode afficher location par client
+     * @param cl
+     * @return List<Location>
+     */
+
+    public List<Location> afficherLocations(Client cl){
+
+        List<Location> lcl = new ArrayList<>();
+
+        for(Location loc : locations){
+            if(loc.getClient().equals(cl)){
+
+                lcl.add(loc);
+            }
+        }
+        return lcl;
+    }
+
+    /**
      * getter identifiant client
      * @return id identifiant client
      */

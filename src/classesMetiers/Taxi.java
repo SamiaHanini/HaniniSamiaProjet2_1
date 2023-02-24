@@ -41,6 +41,24 @@ public class Taxi{
         this.prixKm = prixKm;
     }
 
+    /**
+     * méthode afficher location par taxi
+     * @param t
+     * @return List<Location>
+     */
+
+    public List<Location> afficherLocations(Taxi t){
+
+        List<Location> lcl = new ArrayList<>();
+
+        for(Location loc : locations){
+            if(loc.getTaxi().equals(t)){
+
+                lcl.add(loc);
+            }
+        }
+        return lcl;
+    }
 
     /**
      * getter identifiant

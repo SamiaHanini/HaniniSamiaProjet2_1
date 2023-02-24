@@ -63,32 +63,6 @@ public class Location {
         total = taxi.getPrixKm()*kmtotal;
     }
 
-    //TODO A VERIFIER
-    /**
-     * méthode affichant les locations d'une date
-     */
-    public void afficherLocs(){
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Veuillez entrer une date : ");
-        String datesc = sc.nextLine();
-        //transformer string en localdate
-        DateTimeFormatter pattern = DateTimeFormatter.ofPattern("dd-MMM-yyyy");
-        LocalDate datetime = LocalDate.parse(oldDate, pattern);
-
-        for (Location loc : listeLocations)
-        {
-
-            //boucle pour parcourir les locations ?
-            if(dateLoc.isEqual(datetime))
-            {
-                System.out.println(loc.toString() + loc.getClient().toString() + loc.getTaxi().toString());
-
-            }
-        }
-
-    }
-
     /**
      * getter de l'identifiant
      * @return id identifiant
